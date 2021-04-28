@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <title>Traveling</title>
+</head>
+<body>
+    <header>
+         <nav>             
+             <ul>
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#pacotes">Pacotes</a></li>
+                 <li><a href="#servicos">Serviços</a></li>
+                 <li><a href="#contatos">contatos</a></li>
+             </ul>
+         </nav>
+
+         <div id="home" class="header-content">
+             <h1>Next Stop</h1>
+             <h3>o embarque está proximo, conheça os melhores lugares!</h3>
+             <br>
+            <button class="btn-Saiba">Saiba mais</button>
+         </div>
+    </header>
+
+    <section id="pacotes" class="pacotes">
+        <h1 class="pacotes-title">Nossos Pacotes</h1>
+
+        <div class="pacotes-cards">
+        <div class="card">
+
+            <div class="card-tag-top">
+                <p>Promoção</p>
+            </div>
+
+            <div class="card-tag-bottom">
+                <p>R$ 1.253,00</p>
+            </div>
+
+            <img class="card-image
+            " src="./asses-pics/foz-iguacu.jpg" alt="Cachoeira - Foz do Iguaçu">
+
+            <div class="card-content">
+                <h1>4 noites Foz do Iguaçu</h1>
+                <ul>
+                    <li><i class="fas fa-calendar-plus"></i>Agendamento</li>
+                    <li><i class="fas fa-utensils"></i>Café da manhã incluso</li>
+                    <li><i class="fas fa-wifi"></i>Wi-Fi incluso</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+ 
+            <div class="card-tag-top">
+                <p>Promoção</p>
+            </div>
+
+            <div class="card-tag-bottom">
+                <p>R$ 7.252,32</p>
+            </div>
+
+            <img class="card-image
+            " src="./asses-pics/russia.jpg" alt="Russia - Kremlin">
+
+            <div class="card-content">
+                <h1>5 noites Russia</h1>
+                <ul>
+                    <li><i class="fas fa-calendar-plus"></i>Agendamento</li>
+                    <li><i class="fas fa-utensils"></i>Café da manhã incluso</li>
+                    <li><i class="fas fa-wifi"></i>Wi-Fi incluso</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="card-tag-top">
+                <p>Promoção</p>
+            </div>
+
+            <div class="card-tag-bottom">
+                <p>R$ 9.253,00</p>
+            </div>
+
+            <img class="card-image
+            " src="./asses-pics/japan.jpg" alt="Japan - Tokio">
+
+            <div class="card-content">
+                <h1>5 Japão - Tokio</h1>
+                <ul>
+                    <li><i class="fas fa-calendar-plus"></i>Agendamento</li>
+                    <li><i class="fas fa-utensils"></i>Café da manhã incluso</li>
+                    <li><i class="fas fa-wifi"></i>Wi-Fi incluso</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h1 class="servico-title">Serviços</h1>
+
+        
+        <div class="servico-card">
+            <div class="card-servi">
+                <i class="far fa-map"></i>
+                <div class="card-content">
+                    <h3>Tuor guiadas</h3>
+                    <p>Os tours guiados são passeios realizados comum guia turistico. Que além de dar informações sobre os locais, vai conduzir-nos pelos locais.</p>
+                </div>
+                <button class="btn-Saiba">Saiba mais</button>
+            </div>
+        
+            <div class="card-servi">
+                <i class="fas fa-camera"></i>
+                <div class="card-content">
+                    <h3>Fotográfia</h3>
+                    <p>Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite ao máximo as paisagens e não se preocupe com nada.</p>
+                </div>
+                <button class="btn-Saiba">Saiba mais</button>
+            </div>
+        
+            <div class="card-servi">
+                <i class="fas fa-car"></i>
+                <div class="card-content">
+                    <h3>Aluguel de veiculos</h3>
+                    <p>Para os clientes que preferem explorar o ambiente sozinhos e curtem aliberdade, oferecemos o serviço de aluguel de veículos com preços que cabem no bolso.</p>
+                </div>
+                <button class="btn-Saiba"class="btn-Saiba">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+        <section id="contatos" class="contatos">
+            <div class="contato-card">
+                <h1>Entre em contato</h1>
+                <ul>
+                    <li><i class="fas fa-thumbtack"></i>Rua Sem Nome, 752</li>
+                    <li><i class="fas fa-envelope-open-text"></i>contato@cachoeiras.com.br</li>
+                    <li><i class="fas fa-phone"></i>+55 (11) 3965-9896</li>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </section>
+        
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = { 
+                  lat: -25.344,
+                   lng: 131.036
+                };
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {
+                zoom: 15,
+                center: uluru,
+              });
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+              });
+            }
+          </script>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+      
+    </body>
+</html>

@@ -1,0 +1,365 @@
+:root{
+    --color-text: rgb(5, 5, 5); /* cor do texto */
+    --bg-card: #B1C1C0; /* Cards de pacotes .card*/
+    --bg-button: #91886838; /* Button Saiba mais */
+    --bg-tag-top: #A31621; /* tag .card-tag-top */
+    --bg-tag-bottom: #0B7A75; /* tag .card-tag-bottom */
+    --bg-tag-contato: #D7D7FF38; /*background contato */
+    --bg-card-contato: #CE8147; /* .contato-card e na parte mobile do hearder ul menu */
+    --bg-color: #1E2019; /* .pacotes*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;    width: 100vw;
+    color: var(--color-text);
+    font-weight: bolder;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-Saiba {
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: var(--bg-button);
+    border: none;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('./asses-pics/header-travel.jpg');
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex; 
+    font-size: 1.5rem; 
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.header-content{
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+
+
+.pacotes {
+    background: var(--bg-color);
+    color: white;
+    padding: 15px;
+
+    /*height: 500px;*/
+    /*display: flex;*/
+}
+
+.pacotes-title {
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.pacotes-cards {
+    /*height: 500px;*/
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+.pacotes .card-content li i {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.card {
+    width: 250px;
+    height: 330px;
+    background-color: var(--bg-card);
+    border-radius: 12px 0px;
+    margin: 25px 20px;
+    position: relative;
+}
+
+.card-image {
+    width: 250px;
+    height: 180px;
+    border-radius: 12px 0 0 0;
+}
+
+.card-content{
+    padding: 0 15px;
+}
+
+.card-content h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(82, 82, 82);
+
+}
+
+.card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.card-content ul li{
+    list-style: none;
+    margin-bottom: 0.8rem; /* espaço entre as linhas do card */
+    display: flex;
+    align-items: center;
+
+    font-size: 0.9rem;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+}
+
+.card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+    border-radius: 8px 0 0 8px;
+    border: solid 1px #A31621;
+    padding: 5px 10px;
+
+    background-color: var(--bg-tag-top);
+}
+
+.card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 150px;
+
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+    border-radius: 0 8px 8px 0;
+    border: solid 1px #0B7A75;
+    padding: 5px 10px;
+
+    background-color: var(--bg-tag-bottom);
+}
+
+.card-tag-top,
+.card-tag-bottom,
+ p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* AREA DE SERVIÇOS */
+.servicos {
+    padding: 15px;
+}
+
+.servico-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servico-card {
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.card-servi {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .servico-card .card-servi i {
+    transition: all 0.5s;
+}
+
+.servicos .servico-card .card-servi i:hover{
+    transform: scale(2.3);
+}
+
+.card-content h3 {
+    font-weight: bold;
+}
+
+.card-servi p {
+    color: rgb(82, 82, 82, 0.6);
+    font-size: .8rem;
+    text-align: center;
+}
+
+.card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.contatos {
+    background-color: var(--bg-tag-contato);
+    margin-top: 150px;
+    padding: 60px;
+    position: relative;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+/* Area do contato */
+.contato-card {
+    width: 350px;
+    height: 300px;
+    background: var(--bg-card-contato);
+    position: absolute;
+    z-index: 99;
+
+    border-radius: 8px;
+
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato-card h1{
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato-card ul li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.contato-card li i {
+    width: 16px;
+    margin: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+/* especial para mapa */
+@media (max-width: 950px) {
+    .contatos {
+        padding: 60px 0;
+    }
+    .contato-card{
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .contatos {
+        padding: 20px 0;
+    }
+
+    .contato-card{
+        position: static;
+        margin: 40px auto;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phone and down */
+@media (max-width: 480px) {
+    body{
+        margin-bottom: 55px;
+    }
+
+    header nav ul {
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       padding: 0;
+       margin: 0;
+       z-index: 99;
+
+       background: var(--bg-card-contato);
+       color: var(--color-text);
+       font-weight: bold;
+       height: 55px;
+
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* Portrait tablet to landscape and desktop */
+/*@media (min-width: 768px) and (max-width: 979px) {...}*/
+
+/* Large desktop */
+/*@media (min-width: 1200px) {...}*/
